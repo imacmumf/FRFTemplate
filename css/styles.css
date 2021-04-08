@@ -1,0 +1,408 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 4px 5px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #5e5e5e;
+  padding-bottom: 3%;
+}
+
+p {
+  color: #727375;
+}
+
+ul {
+  text-align: left;
+  line-height: 3rem;
+}
+
+a {
+  color: #4d6691;
+}
+
+/*Navbar*/
+/* ul {
+  display: inline-block;
+} */
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #e4f6f7;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 4px 5px;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+/* .container-fluid {
+  padding: 7% 15%;
+} */
+/* Sections */
+.colored-section1 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0177/1382/files/3Nova-Scotia-Fisherman-Natural-Skincare-Seakelp.JPG?15543394362609250028");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #cccccc;
+}
+
+.colored-section {
+  background-color: #fafeff;
+  color: #020912;
+}
+
+.white-section {
+  background-color: #fff;
+  padding: 5%;
+}
+
+/* Navigation Bar */
+/* .navbar {
+  padding: 0.7 0 1.5rem;
+  color: #3d55b8;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 4px 5px;
+  width: 100%;
+
+
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-family: 'Montserrat-light', sans-serif;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+} */
+.navbar {
+  transition: all 0.4s;
+  white-space: nowrap;
+}
+
+.navbar .nav-link {
+  color: #323236;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: black;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+  font-size: 1.5rem;
+  transition-duration: 0.3s;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+}
+
+.navbar .container {
+  margin: 0 2%;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+    color: #555;
+  }
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  margin: 1rem;
+  transition-duration: 0.3s;
+  padding: 1% 0 3%;
+  /* text-shadow: 3px 0 #a7c1eb; */
+}
+
+/* Title Section */
+#title .container-fluid {
+  padding: 8% 15% 10%;
+  text-align: left;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.download-button:hover {
+  background-color: #d0d6d9;
+}
+
+/* Title Image */
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Why Us Section */
+#whyUs {
+  background-color: #fff;
+  position: relative;
+}
+
+.why-us-desc {
+  margin: 0 20%;
+  text-align: left;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 1%;
+  font-family: 'Montserrat-bold', sans-serif;
+}
+
+.icon {
+  /* font-size: 2.5rem; */
+  color: #4293f5;
+  margin: 1rem;
+  font-size: 4rem;
+  color: #4d6691;
+}
+
+.icon:hover {
+  color: #0a174a;
+}
+
+.list {
+  line-height: 2rem;
+}
+
+/* Work With Section */
+#work-with {
+  background: linear-gradient(to bottom, #d7e4fa 0%, #a8afba 100%);
+  padding: 3%;
+}
+
+.work-with-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #1b1b1c;
+  padding-bottom: 2%;
+  text-shadow: 2px 2px #858585;
+}
+
+.work-with-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.btn {
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  background-color: #727475;
+}
+
+.carousel-indicators {
+  position: relative;
+  padding-top: 3%;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.heading-row {
+  padding: 2% 8%;
+}
+
+.work-with-row {
+  padding: 1% 12%;
+}
+
+.button-row {
+  padding: 2% 12%;
+}
+
+.families-row {
+  margin: 2% 10%;
+  text-align: left;
+}
+
+/* About */
+#about p {
+  padding: 2% 12%;
+  line-height: 2rem;
+  text-align: left;
+}
+
+/* Testimonials */
+#testimonials {
+  background: linear-gradient(to bottom, #d7e4fa 0%, #a8afba 100%);
+  padding: 3%;
+}
+
+#testimonials h2 {
+  margin: 4%;
+}
+
+#testimonials p {
+  margin: 1% 15%;
+  line-height: 2rem;
+}
+
+/* Contact*/
+#contact {
+  padding: 100px;
+}
+
+.form-group {
+  margin: 3% 30%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Privacy Policy */
+#privacy-policy p {
+  text-align: left;
+  margin: 3% 15%
+}
+
+#privacy-policy.colored-section {
+  background: linear-gradient(to bottom, #d7e4fa 0%, #a8afba 100%);
+  padding: 5%;
+  margin: 0;
+}
+
+/* Blog */
+#blog {
+  padding: 5%;
+}
+
+#blog p {
+  text-align: left;
+  margin: 3% 15%;
+  line-height: 2.3rem;
+}
+
+#blog .btn:hover {
+  background: linear-gradient(to bottom, #d7e4fa 0%, #a8afba 100%);
+}
+
+/* Resources */
+#resources ul {
+  list-style-type: none;
+  color: #3b3c3d;
+  padding: 2% 25%;
+}
+
+/* Footer */
+.social-icon {
+  margin: 20px 10px;
+}
+
+#footer {
+  background: linear-gradient(to bottom, #d7e4fa 0%, #a8afba 100%);
+  margin: 0;
+}
+
+/* Media Specs */
+/* @media (max-width: 1028px) {
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  } */
+@media (max-width: 1630px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1320px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+#privacy-policy {
+  /* position: relative; */
+  margin: 5%;
+  padding: 10%;
+}
+
+/* #privacy-policy .container-fluid {
+  padding: 10%;
+} */
+#title {
+  text-align: center;
+}
